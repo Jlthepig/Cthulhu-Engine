@@ -1,0 +1,4 @@
+﻿  glad.c
+  Main.cpp
+C:\Users\jarri\Desktop\VIsualStudioProjects\Cthulhu Engine\Cthulhu Engine\Src\Main.cpp(11,2): warning C4551: function call missing argument list
+LINK : fatal error LNK1104: cannot open file 'opengl32.lib'
