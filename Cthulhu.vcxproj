@@ -71,16 +71,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(SolutionDir)\Library\include</IncludePath>
+    <IncludePath>$(SolutionDir)\Library\include;$(SolutionDir)\Library\</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(SolutionDir)\Library\include</IncludePath>
+    <IncludePath>$(SolutionDir)\Library\include;$(SolutionDir)\Library\</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)\Library\include</IncludePath>
+    <IncludePath>$(SolutionDir)\Library\include;$(SolutionDir)\Library\</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(SolutionDir)\Library\include</IncludePath>
+    <IncludePath>$(SolutionDir)\Library\include;$(SolutionDir)\Library\</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -147,11 +147,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\Shader.h" />
+    <ClInclude Include="Library\Images\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Library\Shaders\FragmentShader.frag" />
+    <None Include="Library\Shaders\VertexShader.vertex" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Library\Images\Meattexture.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
