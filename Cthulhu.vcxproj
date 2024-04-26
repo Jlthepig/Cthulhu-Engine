@@ -159,9 +159,6 @@
     <None Include="Library\Shaders\FragmentShader.frag" />
     <None Include="Library\Shaders\VertexShader.vertex" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="Library\Images\Meattexture.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
