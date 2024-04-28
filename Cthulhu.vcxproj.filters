@@ -37,4 +37,9 @@
     <None Include="Library\Shaders\FragmentShader.frag" />
     <None Include="Library\Shaders\VertexShader.vertex" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Library\Images\jake2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
